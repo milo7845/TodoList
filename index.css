@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient( 90deg, rgb(4, 22, 122)25% , rgb(87, 5, 107) 57%);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top:50px;
+    height: 50px;
+    width: 180px;
+    background: linear-gradient(155deg, #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 10px;
+
+}
+
+
+.wrapper .display{
+    background: #1b1b1b;
+    height: 40px;
+    width: 170px;
+    text-align: center;
+    z-index: 999;
+    border-radius: 10px;
+   
+}
+.wrapper .display #time{
+    line-height: 40 px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    background: linear-gradient(155deg, #14ffe9, #ffeb3b, #ff00e0);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 1.5s linear infinite;
+    
+}
+@keyframes animate{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+h1{
+    color: rgba(134, 243, 61, 0.979);
+    font-size: 60px;
+    font-family:sans-serif;
+    margin-top: 100px;
+    font-weight: bold;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+#input{
+    height: 35px;
+    width: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    border: 2px solid  rgb(57, 240, 33);
+
+
+}
+#input:focus{
+    border: none;
+    outline: none;
+}
+#add-input{
+    height: 35px;
+    width: 35px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(57, 240, 33);
+    border-radius: 30px;
+    border: 2px solid #fff;
+
+}
+.todos{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.todo{
+    background-color: aliceblue;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 2px solid  rgb(57, 240, 33);
+}
